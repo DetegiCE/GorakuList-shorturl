@@ -12,16 +12,14 @@
     <script>
         const redirectUrl = 'https://gorakulist.kr'
 
-        if (window.location.origin === 'https://gorakul.ist') {
-            if (/\/s\/[a-zA-Z0-9]*/.test(window.location.pathname)) {
-                window.location.href = redirectUrl + '/store/' + window.location.pathname.replace('/s/', '');
-            }
-            else if (/\/si\/[a-zA-Z0-9]*/.test(window.location.pathname)) {
-                //todo
-            }
-            else if (/\/mi\/[a-zA-Z0-9]*/.test(window.location.pathname)) {
-                //todo
-            }
+        if (/\/s\/[a-zA-Z0-9]*/.test(window.location.pathname)) {
+            window.location.href = redirectUrl + '/store/' + window.location.pathname.replace('/s/', '');
+        }
+        else if (/\/si\/[a-zA-Z0-9]*/.test(window.location.pathname)) {
+            //todo
+        }
+        else if (/\/mi\/[a-zA-Z0-9]*/.test(window.location.pathname)) {
+            //todo
         }
     </script>
 </body>
