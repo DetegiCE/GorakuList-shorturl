@@ -12,8 +12,8 @@
     <script>
         const redirectUrl = 'https://www.gorakulist.kr'
 
-        if (/\/s\/[a-zA-Z0-9]*/.test(window.location.pathname)) {
-            window.location.href = redirectUrl + '/store/' + window.location.pathname.replace('/s/', '');
+        if (/\/[a-zA-Z0-9]*/.test(window.location.pathname)) {
+            window.location.href = redirectUrl + '/store/detail?stordId=' + window.location.pathname.replace('/', '');
         }
         else if (/\/si\/[a-zA-Z0-9]*/.test(window.location.pathname)) {
             //todo
