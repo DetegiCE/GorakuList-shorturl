@@ -13,7 +13,7 @@
         const redirectUrl = 'https://www.gorakulist.kr'
 
         if (/\/[a-zA-Z0-9]*/.test(window.location.pathname)) {
-            window.location.href = redirectUrl + '/store/detail?stordId=' + window.location.pathname.replace('/', '');
+            window.location.href = redirectUrl + '/store/detail?storeId=' + window.location.pathname.replace('/', '');
         }
         else if (/\/si\/[a-zA-Z0-9]*/.test(window.location.pathname)) {
             //todo
